@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>夜跑侠</title>           
+</head>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="js/man.js"></script>
+<script>
+$(function(){
+	var winNum=gainCookie('winNum');
+	var Game=getQueryString("Game");
+	$('#winNum').text(winNum);
+	
+	//点击重来
+	$('#again').click(function(){
+		window.location.href='game.html?Game='+Game;;
+	});
+
+
+	var webheight=document.body.offsetHeight;
+	if(webheight<=480){
+		$('.man').css('bottom','-80px');
+		$('#btn').css('bottom','10px');
+	}
+
+	if(Game==0){
+		$('#meinv').show();
+		$('#cj').text('救起美女');
+		$('#ms').text('你已到达英雄救美的超高境界，很多美女排着队想跟你约跑！');
+	}else if(Game=1){
+		$('#dongwu').show();
+		$('#cj').text('捡到动物');
+		$('#ms').text('你不是人，你是神，美女身前，还能一心救宠物，32个赞！');
+	}
+
+});
+</script>
+<style>
+body,article,section,h1,h2,hgroup,p,a,ul,li,em,div,small,span,footer,canvas,figure,figcaption,input{margin:0;padding:0;}
+html,body{width: 100%;height: 100%;}
+.main{width: 100%;height: 100%;max-width:480px;margin:0 auto;background-image: url('images/bg_share.jpg');background-size: 100% auto;background-repeat: no-repeat;position:relative;font-family: '黑体'; overflow:hidden;}
+.man{width: 100%;position: absolute;bottom:0;left: 0;z-index: 2; display:none;}
+#ms{color: #ffd800;font-size: 16px;padding:20px 42% 0 3%;line-height: 22px;}
+</style>
+<body>  
+<div class="main">
+<div style="width: 86%;height: 130px;margin: 5px 0 0 6.5%;background: rgba(0, 1, 1, 0.65)!important;filter: Alpha(opacity=78);background: #010101;border: solid 1.5px #19b3ba;border-radius: 2px;padding: 10px 3%;color: #ffad21;position: absolute;top: 60px;z-index: 1;">
+<div id="ms"></div>
+<div style="position: absolute;top: -22px;height: 44px;color: #ffd800;font-size: 18px;text-align: center;width: 74%;left: 13%;background: url('images/results-cjbg.png');background-size: 100% 100%;">成绩：<span id="cj">  </span><span style="color:#63f2ff; font-weight:bold;font-size:28px;" id="winNum">00</span>个</div>
+</div>
+
+<img src="images/results-meinv.png" class="man" id="meinv">
+<img src="images/results-dongwu.png" class="man" id="dongwu">
+
+<div style="padding: 0 7%;position: absolute;bottom: 30px;z-index: 10;" id="btn">
+<img src="images/results-btn1.png" alt="" style="height: 32px;margin:0 0 0 2%;float: left;" id="again">
+<a href="share.html"><img src="images/results-btn2.png" alt="" style="height:32px;margin: 0 0 0 2%;float: left;"></a>
+<a href="reservation.html"><img src="images/results-btn3.png" alt="" style="height:32px;margin: 0 0 0 2%;float: left;"></a>
+<img src="images/results-ypms.png" alt="" style="width: 70%;margin: 5px 0 0 2%;float: right;">
+</div>
+
+</div>
+</body>
+</html>

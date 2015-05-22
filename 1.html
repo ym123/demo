@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>引言</title>           
+</head>
+<style>
+body,article,section,h1,h2,hgroup,p,a,ul,li,em,div,small,span,footer,canvas,figure,figcaption,input{margin:0;padding:0;}
+html,body{width: 100%;height: 100%;}
+.main{width: 100%;height: 100%;max-width:480px;margin:0 auto;background-image: url('images/bg1.jpg');background-size: 100% auto;background-repeat: no-repeat; position:relative;}
+</style>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script>
+$(function(){
+	var webheight=document.body.offsetHeight;
+	if(webheight<=480){
+		$('#yinyan').css('margin','75px 0 0 10%')
+		$('#man').css('margin','10px 0 0 10%')
+	}
+})
+</script>
+<body>  
+<div class="main">
+<img src="images/1-yinyan.png" alt="" style="width: 80%;margin: 100px 0 0 10%;" id="yinyan">
+<a href="2.html"><img src="images/1-tiyan.png" alt="" style="width: 80%;margin: 20px 0 0 10%;"></a>
+<img src="images/1-man.png" alt="" style="width: 50%;margin: 20px 10px 0 0;float: right;" id="man">
+</div>
+</body>
+</html>

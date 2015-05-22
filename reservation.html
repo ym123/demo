@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>夜跑侠</title>           
+</head>
+<!-- 最新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<style>
+body,article,section,h1,h2,hgroup,p,a,ul,li,em,div,small,span,footer,canvas,figure,figcaption,input{margin:0;padding:0;}
+html,body{width: 100%;height: 100%;}
+.main{width: 100%;height: 100%;max-width:480px;margin:0 auto;background-image: url('images/bg_share.jpg');background-size: 100% auto;background-repeat: no-repeat;position:relative;font-family: '黑体';}
+</style>
+<script>
+$(function(){
+	var webheight=document.body.offsetHeight;
+	if(webheight<=480){
+		$('#top').css('padding-top','20px')
+		$('#baomin').css('padding-top','8px')
+	}
+})
+</script>
+<body>  
+<div class="main">
+<div style="color: #ffad21;font-size: 22px;font-weight: bold;padding-top: 40px;text-align: center;" id="top">约跑型动</div>
+<div style="color: #ffad21;font-size: 16px;padding: 10px 7%;line-height: 22px;">飞利浦娱乐影音携手珍爱网与跑步圣经在上海最型夜跑圣地，为爱打造线下约跑型动，越跑越有型，约跑就现在！</div>
+<div style="color: #fff;font-size: 14px;padding: 0 7%;line-height: 20px;">约跑地点：徐汇滨江龙腾大道东安路<br>约跑时间：6月19日／6月26日 19:00</div>
+<div style="color: #ffad21;font-size: 20px;font-weight: bold;padding-top: 15px;text-align: center" id="baomin">报名方式</div>
+<div style="width: 86%;height: 130px;margin: 5px 0 0 7%;background: rgba(0, 24, 72, 0.78)!important;filter: Alpha(opacity=78);background: #001848;border: solid 1.5px #c1734d;border-radius: 2px;padding: 10px 3%;color: #ffad21;">
+	<div style="padding-bottom:5px;height: 30px;"><span style="width:20%; float:left;">姓名：</span><input type="text" style="width:80%; float:right;border: solid 1.5px #c1734d;"></div>
+  <div style="padding-bottom:5px;height: 30px;"><span style="width:20%; float:left;">电话：</span><input type="text" style="width:80%; float:right;border: solid 1.5px #c1734d;"></div>
+  <div style="padding-bottom:5px;height: 25px;"><span>约跑对象：</span><input name="sex" type="radio" value="">男生 <input name="sex" type="radio" value="">女生 </div>
+  <div style="padding-bottom:5px;height: 25px;"><span>约跑场次：</span><input name="changci" type="radio" value="">19日 <input name="changci" type="radio" value="">26日 </div>
+</div>
+<a href="ok.html"><img src="images/reservation-btn.png" alt="" style="width: 32%;margin: 20px 0 0 34%;float: left;"></a>
+</div>
+</body>
+</html>

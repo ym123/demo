@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>夜跑侠</title>           
+</head>
+<style>
+body,article,section,h1,h2,hgroup,p,a,ul,li,em,div,small,span,footer,canvas,figure,figcaption,input{margin:0;padding:0;}
+html,body{width: 100%;height: 100%;}
+.main{width: 100%;height: 100%;max-width:480px;margin:0 auto;background-image: url('images/bg_share.jpg');background-size: 100% auto;background-repeat: no-repeat;position:relative; overflow:hidden;}
+</style>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script>
+$(function(){
+	var webheight=document.body.offsetHeight;
+	if(webheight<=480){
+		$('#wz').css({'width':'74%','margin':'6px 0 0 18%'})
+		$('#man').css('bottom','-50px')
+	}
+})
+</script>
+<body>  
+<div class="main">
+<div style="width: 84%;margin: 20px 0 0 8%; position:relative;" id="wz">
+<img src="images/share-wz.png" alt="" style="width:100%">
+<a href="1.html"><img src="images/go.png" alt="" style="width: 44%;position: absolute;bottom: 23%;left: 28%; z-index:3;"></a>
+</div>
+<img src="images/share-man.png" alt="" style="width: 100%;position: absolute;left: 0;bottom: 0; z-index:2;" id="man">
+</div>
+</body>
+</html>
